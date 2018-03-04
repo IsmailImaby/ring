@@ -1,0 +1,364 @@
+# Start Form Designer File
+aObjectsList = [
+	[ :name = "Window" , :id = 1 , :classname = "formdesigner_qwidget" , :data = [
+		 :x = 35 , : y = 100  , 
+		 :width =  465 , :height = 439 , 
+		 :title =  "Calculator
+" , 
+		 :backcolor =  "#67c5ff" , 
+		 :windowflags =  "" , 
+		 :mainlayout =  "" ,
+		 :WindowIcon =  "G:/Projects/RingProjects/Clac/if_calculator_40732.ico" , 
+		 :Menubar =  ""  ,
+		 :IndexType =  0  
+
+		]
+	],
+	[ :name = "lblsc" , :id = 2 , :classname = "formdesigner_qlabel" , :data = [
+		 :x = 7 , : y = 18  , 
+		 :width =  431 , :height = 75 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "#ffffff" , 
+		 :font =  "MS Shell Dlg 2,22,-1,5,50,0,0,0,0,0" , 
+		 :parent =  "win"  ,
+		 :text =  "0",
+		 :textalign =  2
+		]
+	],
+	[ :name = "btnMplus" , :id = 3 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 112 , : y = 129  , 
+		 :width =  56 , :height = 39 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "M+",
+		 :BtnImage =  "",
+		 :setClickEvent =  "Storepos"
+		]
+	],
+	[ :name = "btnMmin" , :id = 4 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 172 , : y = 129  , 
+		 :width =  56 , :height = 39 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "M-",
+		 :BtnImage =  "",
+		 :setClickEvent =  "Storeneg"
+		]
+	],
+	[ :name = "btnMR" , :id = 5 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 232 , : y = 129  , 
+		 :width =  56 , :height = 39 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "MR",
+		 :BtnImage =  "",
+		 :setClickEvent =  "Showall"
+		]
+	],
+	[ :name = "btnMC" , :id = 6 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 292 , : y = 129  , 
+		 :width =  56 , :height = 39 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "MC",
+		 :BtnImage =  "",
+		 :setClickEvent =  "Clearall"
+		]
+	],
+	[ :name = "btneghite" , :id = 7 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 172 , : y = 179  , 
+		 :width =  56 , :height = 39 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "8",
+		 :BtnImage =  "",
+		 :setClickEvent =  "numbereight"
+		]
+	],
+	[ :name = "btnnine" , :id = 8 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 232 , : y = 178  , 
+		 :width =  56 , :height = 39 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "9",
+		 :BtnImage =  "",
+		 :setClickEvent =  "numbernine"
+		]
+	],
+	[ :name = "btnpercent" , :id = 9 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 292 , : y = 179  , 
+		 :width =  56 , :height = 39 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "%",
+		 :BtnImage =  "",
+		 :setClickEvent =  "percent"
+		]
+	],
+	[ :name = "btndevided" , :id = 10 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 352 , : y = 179  , 
+		 :width =  56 , :height = 39 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "÷",
+		 :BtnImage =  "",
+		 :setClickEvent =  "Ksmah"
+		]
+	],
+	[ :name = "btnfive" , :id = 11 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 172 , : y = 229  , 
+		 :width =  56 , :height = 39 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "5",
+		 :BtnImage =  "",
+		 :setClickEvent =  "numberfive"
+		]
+	],
+	[ :name = "btnsix" , :id = 12 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 232 , : y = 229  , 
+		 :width =  56 , :height = 39 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "6",
+		 :BtnImage =  "",
+		 :setClickEvent =  "numbersix"
+		]
+	],
+	[ :name = "btnX" , :id = 13 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 294 , : y = 230  , 
+		 :width =  56 , :height = 39 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "X",
+		 :BtnImage =  "",
+		 :setClickEvent =  "Drab"
+		]
+	],
+	[ :name = "btnmin" , :id = 14 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 353 , : y = 229  , 
+		 :width =  56 , :height = 39 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "-",
+		 :BtnImage =  "",
+		 :setClickEvent =  "Trah"
+		]
+	],
+	[ :name = "btntwo" , :id = 15 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 172 , : y = 279  , 
+		 :width =  56 , :height = 39 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "2",
+		 :BtnImage =  "",
+		 :setClickEvent =  "numbertwo"
+		]
+	],
+	[ :name = "btnthree" , :id = 16 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 232 , : y = 281  , 
+		 :width =  56 , :height = 37 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "3",
+		 :BtnImage =  "",
+		 :setClickEvent =  "numberthree"
+		]
+	],
+	[ :name = "btnplus" , :id = 17 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 292 , : y = 279  , 
+		 :width =  56 , :height = 89 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "+",
+		 :BtnImage =  "",
+		 :setClickEvent =  "Plus"
+		]
+	],
+	[ :name = "btnEqual" , :id = 18 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 353 , : y = 279  , 
+		 :width =  56 , :height = 89 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "=",
+		 :BtnImage =  "",
+		 :setClickEvent =  "EQaul"
+		]
+	],
+	[ :name = "btnAC" , :id = 19 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 52 , : y = 129  , 
+		 :width =  56 , :height = 39 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "AC",
+		 :BtnImage =  "",
+		 :setClickEvent =  "mee"
+		]
+	],
+	[ :name = "btnseven" , :id = 20 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 112 , : y = 179  , 
+		 :width =  56 , :height = 39 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "7",
+		 :BtnImage =  "",
+		 :setClickEvent =  "numberseven"
+		]
+	],
+	[ :name = "btnfour" , :id = 21 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 112 , : y = 229  , 
+		 :width =  56 , :height = 39 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "4",
+		 :BtnImage =  "",
+		 :setClickEvent =  "numberfour"
+		]
+	],
+	[ :name = "btnone" , :id = 22 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 114 , : y = 280  , 
+		 :width =  56 , :height = 39 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "1",
+		 :BtnImage =  "",
+		 :setClickEvent =  "numberone"
+		]
+	],
+	[ :name = "btntwozero" , :id = 23 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 112 , : y = 329  , 
+		 :width =  116 , :height = 39 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "00",
+		 :BtnImage =  "",
+		 :setClickEvent =  "TwoZero"
+		]
+	],
+	[ :name = "btndot" , :id = 24 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 232 , : y = 329  , 
+		 :width =  56 , :height = 39 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "MS Shell Dlg 2,18,-1,5,50,0,0,0,0,0" , 
+		 :parent =  "win"  ,
+		 :text =  ".",
+		 :BtnImage =  "",
+		 :setClickEvent =  "ditdot"
+		]
+	],
+	[ :name = "btnzero" , :id = 25 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 52 , : y = 329  , 
+		 :width =  56 , :height = 39 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "0",
+		 :BtnImage =  "",
+		 :setClickEvent =  "zero"
+		]
+	],
+	[ :name = "btnminplus" , :id = 26 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 52 , : y = 179  , 
+		 :width =  56 , :height = 39 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "+/-",
+		 :BtnImage =  "",
+		 :setClickEvent =  "Saleb"
+		]
+	],
+	[ :name = "btnrem" , :id = 27 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 52 , : y = 228  , 
+		 :width =  56 , :height = 39 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "→",
+		 :BtnImage =  "",
+		 :setClickEvent =  "RRemover"
+		]
+	],
+	[ :name = "btnc" , :id = 28 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 52 , : y = 279  , 
+		 :width =  56 , :height = 39 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "C",
+		 :BtnImage =  "",
+		 :setClickEvent =  "Clearop"
+		]
+	],
+	[ :name = "btnsq" , :id = 29 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 352 , : y = 129  , 
+		 :width =  56 , :height = 39 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "√",
+		 :BtnImage =  "",
+		 :setClickEvent =  "RRoot"
+		]
+	],
+	[ :name = "lblmem" , :id = 30 , :classname = "formdesigner_qlabel" , :data = [
+		 :x = 358 , : y = 28  , 
+		 :width =  16 , :height = 12 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "#ffffff" , 
+		 :font =  "MS Shell Dlg 2,6,-1,5,50,0,0,0,0,0" , 
+		 :parent =  "win"  ,
+		 :text =  "M",
+		 :textalign =  1
+		]
+	]
+]
+# End Form Designer File
